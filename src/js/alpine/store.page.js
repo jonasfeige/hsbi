@@ -1,3 +1,4 @@
 export default {
-	studieren: null,
+	visible: true,
+	activeSubpage: null
 }

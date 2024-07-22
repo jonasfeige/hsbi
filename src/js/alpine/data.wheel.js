@@ -6,6 +6,10 @@ export default (id) => ({
 	grabbing: false,
 	activeSlideIndex: 0,
 	init() {
+		setTimeout(() => {
+			this.$el.classList.remove('opacity-0')
+			this.$el.classList.remove('pointer-events-none')
+		}, 300)
 		this.id = id
 
 		/* Init */
@@ -33,6 +37,7 @@ export default (id) => ({
 		})
 	},
 	goToSlide(index) {
+		console.log(index);
 		this.wheel.scrollTo(index)
 	},
 	get activeSlide() {

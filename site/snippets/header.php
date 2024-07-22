@@ -23,8 +23,9 @@
 
 </head>
 
-<body class="text-copy">
+<body class="text-white bg-black text-copy">
 
   <div data-taxi>
     <?php snippet('components/back', ['url' => $site->url()]) ?>
-    <div class="text-foreground bg-background inset-0 w-full min-h-screen <?= $page->mode() ?>-mode" data-taxi-view data-back-link-url="<?= $page->backLinkUrl() ?>" data-is-subpage="<?= in_array($page->intendedTemplate(), ['program']) ?>" data-back-link-rotation="<?= $page->backLinkRotation() ?>">
+    <?php snippet('components/nav') ?>
+    <div class="text-foreground bg-background inset-0 z-10 w-full min-h-screen <?= $page->mode() ?>-mode" data-taxi-view data-back-link-url="<?= $page->backLinkUrl() ?>" data-is-subpage="<?= in_array($page->intendedTemplate(), ['program']) ?>" data-back-link-rotation="<?= $page->backLinkRotation() ?>">
