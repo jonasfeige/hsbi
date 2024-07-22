@@ -23,9 +23,8 @@
 
 </head>
 
-<body class="text-white bg-black text-copy">
+<body class="bg-black text-copy text-beige">
 
   <div data-taxi>
     <?php snippet('components/back', ['url' => $site->url()]) ?>
-    <?php snippet('components/nav') ?>
-    <div class="text-foreground bg-background inset-0 z-10 w-full min-h-screen <?= $page->mode() ?>-mode" data-taxi-view data-back-link-url="<?= $page->backLinkUrl() ?>" data-is-subpage="<?= in_array($page->intendedTemplate(), ['program']) ?>" data-back-link-rotation="<?= $page->backLinkRotation() ?>">
+    <div class="text-foreground bg-background inset-0 w-full min-h-screen <?= $page->mode() ?>-mode view" data-taxi-view data-back-link-url="<?= $page->backLinkUrl() ?>" <?php e(in_array($page->intendedTemplate(), ['hsbi', 'programs']), 'data-taxi-nocache') ?> data-is-subpage="<?= in_array($page->intendedTemplate(), ['program']) ?>" data-back-link-rotation="<?= $page->backLinkRotation() ?>">

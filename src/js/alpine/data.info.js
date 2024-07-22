@@ -10,7 +10,7 @@ export default () => ({
 				animate(
 					(progress) => (counter.innerHTML = Math.round(progress * count)),
 					{
-						duration: 2,
+						duration: .125,
 						easing: 'ease-out',
 					}
 				),

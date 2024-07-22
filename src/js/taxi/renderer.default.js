@@ -1,5 +1,5 @@
 import { Renderer } from '@unseenco/taxi'
-import { animate } from 'motion'
+import { inView, animate } from 'motion'
 
 const backLink = document.querySelector('#back-link')
 
@@ -28,7 +28,31 @@ export default class DefaultRenderer extends Renderer {
 			})
 		}
 
-		// run after the new content has been added to the Taxi container
+		/* Fade in */
+		const elements = [...this.content.querySelectorAll('[data-fade-in]')]
+		const listElements = [...this.content.querySelectorAll('.list li')]
+		const allElements = elements.concat(listElements)
+		allElements.forEach((element) => {
+			inView(
+				element,
+				() => {
+					animate(
+						element,
+						{
+							opacity: [0, 1],
+							y: [20, 0],
+						},
+						{
+							duration: 0.5,
+							easing: 'ease-in-out',
+						}
+					)
+				},
+				{
+					amount: 0.5,
+				}
+			)
+		})
 	}
 
 	onEnterCompleted() {

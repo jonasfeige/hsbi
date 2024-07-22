@@ -1,7 +1,7 @@
 import * as Taxi from '@unseenco/taxi'
 import Alpine from 'alpinejs'
 
-import page from './alpine/store.page'
+// import page from './alpine/store.page'
 import gallery from './alpine/data.gallery'
 import header from './alpine/data.header'
 import list from './alpine/data.list'
@@ -18,12 +18,16 @@ import FromSubpageTransition from './taxi/transition.fromSubpage'
 import SubpageToSubpageTransition from './taxi/transition.subpageToSubpage'
 
 document.addEventListener('alpine:init', () => {
-	Alpine.store('page', page)
+	// Alpine.store('page', page)
 	Alpine.data('gallery', gallery)
 	Alpine.data('header', header)
 	Alpine.data('list', list)
 	Alpine.data('info', info)
 	Alpine.data('wheel', wheel)
+})
+
+window.addEventListener('popstate', () => {
+	location.reload()
 })
 
 Alpine.start()

@@ -12,8 +12,10 @@
 @import '05-objects/objects.details.css';
 @import '05-objects/objects.search.css';
 /* 06 - Components */
+@import '06-components/components.fade-in.css';
 @import '06-components/components.list.css';
 @import '06-components/components.mode.css';
+@import '06-components/components.transitioner.css';
 /* 07 - Plugins */
 @import '07-plugins/plugins.embla.css';
 

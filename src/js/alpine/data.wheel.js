@@ -1,10 +1,9 @@
-import Alpine from 'alpinejs'
 import EmblaCarousel from 'embla-carousel'
 
-export default (id) => ({
+export default (id, activeSlide) => ({
 	scrolling: false,
 	grabbing: false,
-	activeSlideIndex: 0,
+	activeSlideIndex: activeSlide ?? 0,
 	init() {
 		setTimeout(() => {
 			this.$el.classList.remove('opacity-0')
@@ -20,14 +19,12 @@ export default (id) => ({
 			align: 'center',
 		})
 
-		/* Scrol to previous slide */
-		const prevScroll = Alpine.store('page')[this.id]
-		if (prevScroll) this.wheel.scrollTo(prevScroll, true)
+		/* Scrol to active slide */
+		this.wheel.scrollTo(this.activeSlideIndex, true)
 
 		/* Add listeners */
 		this.wheel.on('select', () => {
 			this.activeSlideIndex = this.wheel.selectedScrollSnap()
-			Alpine.store('page')[this.id] = this.wheel.selectedScrollSnap()
 		})
 		this.wheel.on('pointerDown', () => {
 			this.grabbing = true

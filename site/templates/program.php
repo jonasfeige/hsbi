@@ -44,7 +44,7 @@
         <?php endif ?>
 
         <section class="py-5xl px-3xl">
-            <div class="list" x-data="list()">
+            <div class="list">
                 <?= $page->texts() ?>
             </div>
         </section>
@@ -62,7 +62,7 @@
 
         <?php if (($jobs = $page->jobs())->isNotEmpty()) : ?>
             <section class="sticky top-0 min-h-screen py-5xl px-3xl">
-                <div class="max-w-screen-xl mx-auto">
+                <div class="max-w-screen-xl mx-auto" data-fade-in>
                     <div class="text-h3 mb-m">Hier kann ich arbeiten:</div>
                     <div><?= $jobs ?></div>
                 </div>
@@ -70,7 +70,7 @@
         <?php endif ?>
 
         <section class="sticky top-0 flex flex-col justify-between min-h-screen text-black bg-beige">
-            <div class="flex flex-col items-center text-center py-4xl gap-4xl">
+            <div class="flex flex-col items-center text-center py-4xl gap-4xl" data-fade-in>
                 <div class="max-w-screen-xl mx-auto">
                     Für mehr Informationen besuche <span class="text-h1">hsbi.de</span>
                     oder nimm dir einen Flyer mit. #studiumjetzt
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <nav class="flex justify-between w-full pb-m px-s">
-                <a class="flex items-center gap-s" href="<?= $page->parent()->url() ?>" data-transition="fromSubpage">
+                <a class="flex items-center gap-s" href="<?= $page->backLinkUrl() ?>" data-transition="fromSubpage">
                     <?= svg('assets/icons/arrow_page_nav.svg') ?>
                     Startseite
                 </a>
