@@ -1,0 +1,8 @@
+title: Standorte
+icon: pin
+
+sections:
+  locations:
+    extends: sections/pages
+    label: Standorte
+    template: location

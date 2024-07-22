@@ -1,0 +1,15 @@
+title: Editor
+description: Can edit content but not site settings
+
+permissions:
+  access:
+    panel: true
+    site: true
+    settings: false
+    users: true
+  files: true
+  site:
+    update: true
+  pages: true
+  user: true
+  users: true

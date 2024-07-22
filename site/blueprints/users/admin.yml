@@ -1,0 +1,36 @@
+title: Admin
+# description: Can add recipes but has no admin rights
+
+permissions:
+  access:
+    panel: true
+    site: true
+    settings: true
+    users: true
+  files:
+    create: true
+    changeName: true
+    delete: true
+    replace: true
+    update: true
+  site:
+    update: true
+  pages:
+    create: true
+    changeTemplate: true
+    changeTitle: true
+    changeSlug: true
+    delete: true
+    hide: true
+    sort: true
+    update: true
+  user:
+    create: true
+    changeName: true
+    changeEmail: true
+    changeLanguage: true
+    changePassword: true
+    changeRole: true
+    delete: true
+    update: true
+  users: true

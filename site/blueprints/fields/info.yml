@@ -1,0 +1,4 @@
+label: Info
+extends: fields/text
+marks: false
+nodes: false

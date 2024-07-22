@@ -1,0 +1,12 @@
+.embla {
+	overflow: hidden;
+}
+.embla__container {
+	display: flex;
+    flex-direction: column;
+    touch-action: pan-x pinch-zoom;
+}
+.embla__slide {
+	flex: 0 0 var(--slide);
+	min-width: 0;
+}

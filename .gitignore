@@ -1,0 +1,53 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+
+/storage/media/*
+!/storage/media/index.html
+
+# Lock files
+# ---------------
+.lock
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/storage/cache/*
+!/storage/cache/index.html
+
+# Accounts
+# ---------------
+
+/storage/accounts/*
+!/storage/accounts/index.html
+
+# Sessions
+# ---------------
+
+/storage/sessions/*
+!/storage/sessions/index.html
+
+# License
+# ---------------
+/site/config/.license
+
+# Custom
+# ---------------
+/kirby
+/node_modules
+/vendor
+/storage
+/vendor
+/composer.lock
+/package-lock.json
+public/assets/css
+public/assets/js

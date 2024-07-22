@@ -1,0 +1,63 @@
+title: Studienrichtung
+icon: page
+
+tabs:
+  content:
+    extends: tabs/content
+    fields:
+      header:
+        label: Header
+        type: object
+        required: true
+        fields:
+          headlineLeft:
+            label: nach links
+            type: text
+            required: true
+          headlineRight:
+            label: nach rechts
+            type: text
+          background:
+            extends: fields/images
+            label: Hintergrundbild
+            # required: true
+            max: 1
+            layout: cards
+            size: large
+            image:
+              ratio: 16/9
+              cover: true
+      info:
+        label: Infos
+        type: object
+        required: true
+        fields:
+          programs:
+            label: Studiengänge
+            type: number
+            after: Studiengänge
+            required: true
+            min: 1
+          type:
+            label: Art
+            type: writer
+            inline: true
+          locations:
+            extends: fields/pages
+            label: Standorte
+            query: page('standorte').children.listed
+            empty: Keine Standorte ausgewählt
+            required: true
+            min: 1
+      texts:
+        label: Texte
+        type: list
+      gallery:
+        label: Galerie
+        type: files
+        uploads: image
+      jobs:
+        label: Hier kann ich arbeiten
+        type: writer
+        inline: true
+  media: tabs/media

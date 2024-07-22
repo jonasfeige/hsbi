@@ -1,0 +1,7 @@
+title: HSBI
+icon: page
+
+sections:
+  pages:
+    extends: sections/pages
+    template: blocks

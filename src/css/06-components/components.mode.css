@@ -1,0 +1,9 @@
+.dark-mode {
+    --foreground: theme('colors.beige');
+    --background: theme('colors.black');
+}
+
+.light-mode {
+    --foreground: theme('colors.black');
+    --background: theme('colors.beige');
+}

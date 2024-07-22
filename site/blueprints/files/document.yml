@@ -1,0 +1,11 @@
+title: Document
+
+accept:
+  mime: application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document
+  maxsize: 3000000 # size in byte = 3 MB
+
+fields:
+    title:
+        label: Title
+        type: text
+        width: 1/2

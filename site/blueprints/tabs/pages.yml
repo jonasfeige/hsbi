@@ -1,0 +1,22 @@
+label: Pages
+icon: layers
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      listed:
+        extends: sections/pages
+        status: listed
+        label: Listed
+  right:
+    width: 1/3
+    sections:
+      drafts:
+        extends: sections/pages
+        status: drafts
+        label: Drafts
+      unlisted:
+        extends: sections/pages
+        status: unlisted
+        label: Unlisted

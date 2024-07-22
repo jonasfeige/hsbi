@@ -1,0 +1,12 @@
+label: Media
+icon: image
+columns:
+  left:
+    width: 1/2
+    sections:
+      imagesSection:
+        extends: sections/images
+  right:
+    width: 1/2
+    sections:
+      documentsSection: sections/documents

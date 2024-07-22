@@ -1,0 +1,20 @@
+summary {
+    display: block!important;
+    list-style: none!important;
+}
+
+summary::-webkit-details-marker {
+    display: none !important;
+    margin-inline-end: 0!important;
+}
+
+@supports selector(::marker) {
+    summary {
+        display: block!important;
+        list-style: none!important;
+    }
+    summary::marker {
+        display: block!important;
+        list-style: none!important;
+    }
+}

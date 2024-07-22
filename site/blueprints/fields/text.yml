@@ -1,0 +1,7 @@
+label: Text
+type: writer
+marks:
+  - underline
+  - link
+nodes:
+  - horizontalRule

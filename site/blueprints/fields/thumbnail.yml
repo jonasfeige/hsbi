@@ -1,0 +1,11 @@
+label: Thumbnail
+type: files
+multiple: false
+query: page.images
+uploads: false
+layout: cards
+required: true
+translate: false
+info: "{{ file.caption.or(file.alt) }}"
+image:
+  back: white

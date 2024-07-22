@@ -1,0 +1,5 @@
+title: Default
+icon: page
+
+fields:
+  text: fields/text

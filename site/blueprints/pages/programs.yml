@@ -1,0 +1,10 @@
+title: Studienrichtungen
+icon: page
+
+tabs:
+  programs:
+    label: Studiengänge
+    sections:
+      pages:
+        extends: sections/pages
+        template: program

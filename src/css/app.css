@@ -1,0 +1,21 @@
+@import './fonts.css';
+
+@import 'tailwindcss/base';
+
+/* 01 - Settings */
+@import '01-settings/settings.variables.css';
+@import '01-settings/settings.spacing.css';
+/* 04 - Elements */
+@import '04-elements/elements.html.css';
+@import '04-elements/elements.body.css';
+/* 05 - Objects */
+@import '05-objects/objects.details.css';
+@import '05-objects/objects.search.css';
+/* 06 - Components */
+@import '06-components/components.list.css';
+@import '06-components/components.mode.css';
+/* 07 - Plugins */
+@import '07-plugins/plugins.embla.css';
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

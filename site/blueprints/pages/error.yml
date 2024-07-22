@@ -1,0 +1,5 @@
+title: Error
+icon: alert
+
+fields:
+  text: fields/text

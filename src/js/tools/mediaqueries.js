@@ -1,0 +1,5 @@
+export const mqSm = window.matchMedia('(min-width: 640px)')
+export const mqMd = window.matchMedia('(min-width: 768px)')
+export const mqLg = window.matchMedia('(min-width: 1024px)')
+export const mqXl = window.matchMedia('(min-width: 1280px)')
+export const mq2xl = window.matchMedia('(min-width: 1536px)')

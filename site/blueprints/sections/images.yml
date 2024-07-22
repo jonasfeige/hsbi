@@ -1,0 +1,14 @@
+type: files
+headline: Images
+template: image
+info: "{{ file.caption.or(file.alt) }}"
+image:
+  back: white
+help: |
+  Optimal settings:
+  · Format: Jpeg
+  · profile: sRGB
+  · resolution: 72dpi
+  · max. width: 3.500px
+  · max height: 3.500px
+  · max. filesize: 3MB

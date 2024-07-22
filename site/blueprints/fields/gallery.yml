@@ -1,0 +1,10 @@
+label: Gallery
+icon: layers
+type: files
+uploads: false
+translate: false
+layout: cards
+size: small
+info: "{{ file.caption }}"
+image:
+  back: white
