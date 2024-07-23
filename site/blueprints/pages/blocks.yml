@@ -1,5 +1,10 @@
 title: Blocks
 icon: page
 
-fields:
-  text: fields/text
+tabs:
+  content:
+    extends: tabs/content
+    fields:
+      header: fields/header
+      blocks: fields/blocks
+  media: tabs/media

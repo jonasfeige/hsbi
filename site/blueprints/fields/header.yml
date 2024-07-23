@@ -1,0 +1,20 @@
+label: Header
+type: object
+fields:
+  headlineLeft:
+    label: nach links
+    type: text
+    required: true
+  headlineRight:
+    label: nach rechts
+    type: text
+  background:
+    extends: fields/images
+    label: Hintergrundbild
+    # required: true
+    max: 1
+    layout: cards
+    size: large
+    image:
+      ratio: 16/9
+      cover: true

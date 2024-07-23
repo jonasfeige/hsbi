@@ -1,7 +1,15 @@
 label: Text
 type: writer
+headings:
+  - 2
+  - 3
+  - 4
 marks:
   - underline
+  - bold
+  - italics
   - link
 nodes:
-  - horizontalRule
+  - heading
+  - bulletList
+  - orderedList

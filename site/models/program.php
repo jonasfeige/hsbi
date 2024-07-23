@@ -7,4 +7,9 @@ class ProgramPage extends Page
     {
         return $this->parent()->url() . '?slide=' . $this->indexOf($this->siblings());
     }
+
+    public function backLinkTransition()
+    {
+        return 'fromSubpage';
+    }
 }

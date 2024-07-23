@@ -1,2 +1,32 @@
 title: Standort
 icon: pin
+
+tabs:
+  content:
+    extends: tabs/content
+    columns:
+      left:
+        width: 1/4
+        fields:
+          students:
+            label: Studierende
+            type: number
+      right:
+        width: 3/4
+        fields:
+          entries:
+            label: Einträge
+            type: structure
+            fields:
+              image:
+                extends: fields/image
+                required: false
+              headline:
+                label: Überschrift
+                type: text
+                width: 1/2
+              texts:
+                label: Texte
+                type: list
+                width: 1/2
+  media: tabs/media

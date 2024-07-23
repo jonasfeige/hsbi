@@ -4,4 +4,8 @@ icon: page
 sections:
   pages:
     extends: sections/pages
-    template: blocks
+    template:
+      - blocks
+      - locations
+      - faculties
+    create: blocks

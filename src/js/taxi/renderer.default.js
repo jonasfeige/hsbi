@@ -7,10 +7,23 @@ export default class DefaultRenderer extends Renderer {
 	onEnter() {
 		const backLinkUrl = this.content.dataset.backLinkUrl
 		const backLinkRotation = this.content.dataset.backLinkRotation
-		const isSubpage = !!this.content.dataset.isSubpage
+		const backLinkTransition = this.content.dataset.backLinkTransition
 
-		if (isSubpage) {
-			backLink.setAttribute('data-transition', 'fromSubpage')
+		// setTimeout(() => {
+		// 	const hash = window.location.hash
+		// 	if (hash) {
+		// 		const element = this.content.querySelector(`${hash}`)
+		// 		const top = element.getBoundingClientRect().top + window.scrollY
+		// 		window.scrollTo({
+		// 			left: 0,
+		// 			top: top,
+		// 			behavior: 'instant',
+		// 		})
+		// 	}
+		// }, 300)
+
+		if (backLinkTransition) {
+			backLink.setAttribute('data-transition', backLinkTransition)
 		} else {
 			backLink.removeAttribute('data-transition')
 		}
@@ -30,7 +43,8 @@ export default class DefaultRenderer extends Renderer {
 
 		/* Fade in */
 		const elements = [...this.content.querySelectorAll('[data-fade-in]')]
-		const listElements = [...this.content.querySelectorAll('.list li')]
+		const listElements = [...this.content.querySelectorAll('.prose li')]
+		// const paragraphs = [...this.content.querySelectorAll('.prose p')]
 		const allElements = elements.concat(listElements)
 		allElements.forEach((element) => {
 			inView(

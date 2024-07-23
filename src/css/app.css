@@ -12,12 +12,35 @@
 @import '05-objects/objects.details.css';
 @import '05-objects/objects.search.css';
 /* 06 - Components */
+@import '06-components/components.animations.css';
+@import '06-components/components.blocks.css';
 @import '06-components/components.fade-in.css';
-@import '06-components/components.list.css';
 @import '06-components/components.mode.css';
+@import '06-components/components.prose.css';
 @import '06-components/components.transitioner.css';
 /* 07 - Plugins */
 @import '07-plugins/plugins.embla.css';
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+	pointer-events: none;
+} */

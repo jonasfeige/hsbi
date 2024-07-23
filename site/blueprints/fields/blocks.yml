@@ -1,0 +1,8 @@
+label: Blocks
+type: blocks
+fieldsets:
+  - numbers
+  # - text.images
+  - text
+  - gallery
+  - video

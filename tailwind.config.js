@@ -13,8 +13,7 @@ module.exports = {
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
-			white: '#fff',
-			beige: '#f8f5f0',
+			white: '#f8f5f0',
 			black: '#0C0C0C',
 			foreground: 'var(--foreground)',
 			background: 'var(--background)',
@@ -26,14 +25,15 @@ module.exports = {
 			h1: ['150px', '1'],
 			h2: ['110px', '1'],
 			h3: ['70px', '1'],
-			copy: ['50px', '1'],
+			copy: ['50px', '1.125'],
 		},
 		extend: {
 			scale: {
 				pre: 1.001,
 			},
 			spacing: {
-				'slide': 'var(--slide)',
+				arrow: '120px',
+				slide: 'var(--slide)',
 				'1px': '1px',
 				'2px': '2px',
 				'3xs': 'var(--space-3xs)',
@@ -63,6 +63,9 @@ module.exports = {
 				's-2xl': 'var(--space-s-2xl)',
 				'l-2xl': 'var(--space-l-2xl)',
 				'm-3xl': 'var(--space-m-3xl)',
+			},
+			animation: {
+				'bounce-xl': 'bounce-xl 1s infinite',
 			},
 		},
 	},

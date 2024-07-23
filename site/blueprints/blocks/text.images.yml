@@ -1,0 +1,15 @@
+name: Text und Bilder
+# label: Stats mit Bildern
+wysiwyg: true
+fields:
+  entries:
+    label: Einträge
+    type: structure
+    fields:
+      image:
+        extends: fields/image
+        width: 1/2
+      text:
+        label: Text
+        type: writer
+        width: 1/2

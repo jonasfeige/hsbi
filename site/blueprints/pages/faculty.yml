@@ -1,0 +1,16 @@
+title: Fachbereich
+icon: pin
+
+tabs:
+  content:
+    extends: tabs/content
+    columns:
+      left:
+        width: 1/4
+        fields:
+          background: fields/image
+      right:
+        width: 3/4
+        fields:      
+          text: fields/text
+  media: tabs/media

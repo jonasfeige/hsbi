@@ -6,6 +6,8 @@ columns:
     sections:
       imagesSection:
         extends: sections/images
+      videosSection:
+        extends: sections/videos
   right:
     width: 1/2
     sections:

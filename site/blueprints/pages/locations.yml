@@ -1,8 +1,16 @@
 title: Standorte
 icon: pin
 
-sections:
-  locations:
-    extends: sections/pages
-    label: Standorte
-    template: location
+tabs:
+  content:
+    extends: tabs/content
+    sections:
+      fields:
+        type: fields
+        fields:
+          header: fields/header
+      locations:
+        extends: sections/pages
+        label: Standorte
+        template: location
+  media: tabs/media

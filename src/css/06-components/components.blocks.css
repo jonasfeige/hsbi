@@ -1,0 +1,9 @@
+[data-block-type] {
+	@apply mb-3xl;
+}
+
+[data-block-type]:not(:has(+ *)),
+[data-block-type='gallery']:has(+ [data-block-type='video']),
+[data-block-type='video']:has(+ [data-block-type='gallery']) {
+	@apply mb-0;
+}

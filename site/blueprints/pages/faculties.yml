@@ -1,0 +1,16 @@
+title: Fachbereiche
+icon: pin
+
+tabs:
+  content:
+    extends: tabs/content
+    sections:
+      fields:
+        type: fields
+        fields:
+          header: fields/header
+      faculties:
+        extends: sections/pages
+        label: Fachbereiche
+        template: faculty
+  media: tabs/media

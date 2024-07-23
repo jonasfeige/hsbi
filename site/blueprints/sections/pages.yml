@@ -2,5 +2,8 @@ label: Pages
 type: pages
 empty: No pages
 image:
+  # query: page.thumbnail()
+  query: icon
   back: black
   color: white
+  cover: true

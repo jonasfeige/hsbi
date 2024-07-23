@@ -1,8 +1,8 @@
-label: Thumbnail
+label: Bild
 type: files
 multiple: false
 query: page.images
-uploads: false
+uploads: image
 layout: cards
 required: true
 translate: false

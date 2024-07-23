@@ -1,0 +1,9 @@
+name: Galerie
+icon: images
+fields:
+  scale:
+    label: Erstes Bild beim Scrollen skalieren?
+    type: toggle
+    default: true
+    width: 1/2
+  gallery: fields/gallery

@@ -34,7 +34,6 @@ export default (id, activeSlide) => ({
 		})
 	},
 	goToSlide(index) {
-		console.log(index);
 		this.wheel.scrollTo(index)
 	},
 	get activeSlide() {

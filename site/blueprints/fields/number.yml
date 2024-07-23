@@ -1,0 +1,15 @@
+label: Zahl
+type: object
+empty: Kein Eintrag
+fields:
+  number:
+    label: Nummer
+    type: number
+    width: 3/4
+  suffix:
+    label: Suffix
+    type: text
+    width: 1/4
+  label:
+    label: Label
+    type: text

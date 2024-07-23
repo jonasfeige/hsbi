@@ -5,28 +5,7 @@ tabs:
   content:
     extends: tabs/content
     fields:
-      header:
-        label: Header
-        type: object
-        required: true
-        fields:
-          headlineLeft:
-            label: nach links
-            type: text
-            required: true
-          headlineRight:
-            label: nach rechts
-            type: text
-          background:
-            extends: fields/images
-            label: Hintergrundbild
-            # required: true
-            max: 1
-            layout: cards
-            size: large
-            image:
-              ratio: 16/9
-              cover: true
+      header: fields/header
       info:
         label: Infos
         type: object
@@ -52,10 +31,7 @@ tabs:
       texts:
         label: Texte
         type: list
-      gallery:
-        label: Galerie
-        type: files
-        uploads: image
+      gallery: field/gallery
       jobs:
         label: Hier kann ich arbeiten
         type: writer

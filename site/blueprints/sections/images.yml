@@ -1,5 +1,5 @@
 type: files
-headline: Images
+headline: Bilder
 template: image
 info: "{{ file.caption.or(file.alt) }}"
 image:
