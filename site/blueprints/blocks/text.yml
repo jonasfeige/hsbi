@@ -1,3 +1,4 @@
 name: Text
+icon: text
 fields:
   text: fields/text

@@ -24,23 +24,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* html.lenis,
-html.lenis body {
-	height: auto;
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
 }
 
-.lenis.lenis-smooth {
-	scroll-behavior: auto !important;
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-	overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-	overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-	pointer-events: none;
-} */

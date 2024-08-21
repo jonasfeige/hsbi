@@ -63,6 +63,8 @@ module.exports = {
 				's-2xl': 'var(--space-s-2xl)',
 				'l-2xl': 'var(--space-l-2xl)',
 				'm-3xl': 'var(--space-m-3xl)',
+				/* Faculty Pan */
+				'faculty': 'calc(100% - 1px)'
 			},
 			animation: {
 				'bounce-xl': 'bounce-xl 1s infinite',

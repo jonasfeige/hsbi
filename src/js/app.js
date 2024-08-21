@@ -5,6 +5,7 @@ import Alpine from 'alpinejs'
 import gallery from './alpine/data.gallery'
 import header from './alpine/data.header'
 import faculty from './alpine/data.faculty'
+import faculties from './alpine/data.faculties'
 import numbers from './alpine/data.numbers'
 import location from './alpine/data.location'
 import wheel from './alpine/data.wheel'
@@ -24,6 +25,7 @@ document.addEventListener('alpine:init', () => {
 	Alpine.data('gallery', gallery)
 	Alpine.data('header', header)
 	Alpine.data('faculty', faculty)
+	Alpine.data('faculties', faculties)
 	Alpine.data('location', location)
 	Alpine.data('numbers', numbers)
 	Alpine.data('wheel', wheel)

@@ -1,5 +1,6 @@
 name: Text und Bilder
 # label: Stats mit Bildern
+icon: image
 wysiwyg: true
 fields:
   entries:

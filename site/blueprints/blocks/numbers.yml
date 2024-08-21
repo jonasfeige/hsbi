@@ -1,5 +1,6 @@
 name: Zahlen
 # label: Stats mit Bildern
+icon: order-num-asc
 wysiwyg: true
 fields:
   numbers:

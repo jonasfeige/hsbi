@@ -1,8 +1,7 @@
-label: Pages
+label: Seiten
 type: pages
 empty: No pages
 image:
-  # query: page.thumbnail()
   query: icon
   back: black
   color: white

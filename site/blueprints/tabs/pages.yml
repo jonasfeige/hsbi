@@ -1,4 +1,4 @@
-label: Pages
+label: Seiten
 icon: layers
 
 columns:
@@ -8,15 +8,15 @@ columns:
       listed:
         extends: sections/pages
         status: listed
-        label: Listed
+        label: Gelistet
   right:
     width: 1/3
     sections:
       drafts:
         extends: sections/pages
         status: drafts
-        label: Drafts
+        label: Entwürfe
       unlisted:
         extends: sections/pages
         status: unlisted
-        label: Unlisted
+        label: Ungelistet

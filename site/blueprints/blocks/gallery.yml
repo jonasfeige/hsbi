@@ -1,5 +1,6 @@
 name: Galerie
 icon: images
+preview: fields
 fields:
   scale:
     label: Erstes Bild beim Scrollen skalieren?

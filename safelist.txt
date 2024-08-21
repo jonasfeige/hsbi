@@ -1,0 +1,2 @@
+-translate-x-[95%]
+translate-x-[95%]

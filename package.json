@@ -10,7 +10,9 @@
 		"build:js": "esbuild src/js/app.js --bundle --minify --outfile=public/assets/js/app.js",
 		"watch": "concurrently \"npm:watch:css\" \"npm:watch:js\" \"npm:browsersync\"",
 		"browsersync": "browser-sync start --config 'bs-config.js'",
-		"build": "npm run build:css && npm run build:js"
+		"build": "npm run build:css && npm run build:js",
+		"deploy:staging": "rsync -av --delete --exclude-from .rsyncignore.txt ./ uberspace:/var/www/virtual/jfeige/dev/hsbi/",
+		"deploy:staging:content": "rsync -av --delete ./storage/content/ uberspace:/var/www/virtual/jfeige/dev/hsbi/storage/content/"
 	},
 	"author": "",
 	"license": "ISC",

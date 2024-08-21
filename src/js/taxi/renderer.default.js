@@ -9,19 +9,6 @@ export default class DefaultRenderer extends Renderer {
 		const backLinkRotation = this.content.dataset.backLinkRotation
 		const backLinkTransition = this.content.dataset.backLinkTransition
 
-		// setTimeout(() => {
-		// 	const hash = window.location.hash
-		// 	if (hash) {
-		// 		const element = this.content.querySelector(`${hash}`)
-		// 		const top = element.getBoundingClientRect().top + window.scrollY
-		// 		window.scrollTo({
-		// 			left: 0,
-		// 			top: top,
-		// 			behavior: 'instant',
-		// 		})
-		// 	}
-		// }, 300)
-
 		if (backLinkTransition) {
 			backLink.setAttribute('data-transition', backLinkTransition)
 		} else {
