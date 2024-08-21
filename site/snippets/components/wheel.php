@@ -14,7 +14,7 @@
             <?php foreach ($items as $item) : ?>
                 <li class="embla__slide" data-title="<?= $item->title() ?>" data-url="<?= $item->url() ?>" @click="goToSlide(<?= $i ?>)">
                     <a href="<?= $item->url() ?>" class="block w-full h-full whitespace-nowrap py-s pl-arrow" :class="activeSlideIndex == <?= $i ?> ? '' : 'pointer-events-none'" data-transition="toSubpage">
-                        <?= $item->title() ?>
+                        <div class="translate-y-[7px]"><?= $item->title() ?></div>
                     </a>
                 </li>
                 <?php $i++ ?>
@@ -22,7 +22,7 @@
             <?php foreach ($items as $item) : ?>
                 <li class="embla__slide" data-title="<?= $item->title() ?>" data-url="<?= $item->url() ?>" @click="goToSlide(<?= $i ?>)">
                     <a href="<?= $item->url() ?>" class="block w-full h-full whitespace-nowrap py-s pl-arrow" :class="activeSlideIndex == <?= $i ?> ? '' : 'pointer-events-none'" data-transition="toSubpage">
-                        <?= $item->title() ?>
+                        <div class="translate-y-[7px]"><?= $item->title() ?></div>
                     </a>
                 </li>
                 <?php $i++ ?>

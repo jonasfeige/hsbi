@@ -1,10 +1,13 @@
 import { Renderer } from '@unseenco/taxi'
 import { inView, animate } from 'motion'
+import cssHasPseudo from 'css-has-pseudo/browser'
 
 const backLink = document.querySelector('#back-link')
 
 export default class DefaultRenderer extends Renderer {
 	onEnter() {
+		cssHasPseudo(document)
+
 		const backLinkUrl = this.content.dataset.backLinkUrl
 		const backLinkRotation = this.content.dataset.backLinkRotation
 		const backLinkTransition = this.content.dataset.backLinkTransition

@@ -1,5 +1,4 @@
 import * as Taxi from '@unseenco/taxi'
-// import Lenis from 'lenis'
 import Alpine from 'alpinejs'
 
 import gallery from './alpine/data.gallery'
