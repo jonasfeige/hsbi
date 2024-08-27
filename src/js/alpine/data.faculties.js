@@ -2,6 +2,7 @@ import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock'
 
 export default () => ({
 	openFaculty: null,
+	openFacultyIndex: null,
 	init() {
 		const backLink = document.querySelector('#back-link')
 		const facultiesBackLink = document.querySelector('#faculties-back-link')
@@ -10,7 +11,8 @@ export default () => ({
 				backLink.classList.add('hidden')
 				facultiesBackLink.classList.remove('hidden')
 				const element = document.querySelector(`#${value}`)
-				const top = getStickyElementTop(element)
+				// const top = getStickyElementTop(element)
+				const top = window.innerHeight * this.openFacultyIndex
 				window.scrollTo({
 					top: top,
 					left: 0,

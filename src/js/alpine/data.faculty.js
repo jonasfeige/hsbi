@@ -1,7 +1,8 @@
 import { PointerListener, Pan } from 'contactjs'
 
-export default (id) => ({
+export default (id, index) => ({
 	id: id,
+	index: index,
 	transitioning: false,
 	init() {
 		const content = this.$el.querySelector('[data-faculty-content]')
@@ -28,6 +29,7 @@ export default (id) => ({
 				)
 				this.transitioning = true
 				this.openFaculty = this.id
+				this.openFacultyIndex = this.index
 				content.style = null
 				setTimeout(() => {
 					this.transitioning = false

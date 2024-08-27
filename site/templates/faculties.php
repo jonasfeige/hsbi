@@ -8,8 +8,9 @@
 
     <section class="relative flex flex-col w-full select-none bg-background" id="content">
 
+        <?php $i = 1 ?>
         <?php foreach ($page->children()->listed() as $faculty) : ?>
-            <article class="sticky top-0 w-full h-screen overflow-x-hidden text-background snap-start" x-data="faculty('<?= $faculty->slug() ?>')" id="<?= $faculty->slug() ?>">
+            <article class="sticky top-0 w-full h-screen overflow-x-hidden text-background snap-start" x-data="faculty('<?= $faculty->slug() ?>', <?= $i ?>)" id="<?= $faculty->slug() ?>">
                 <div class="relative z-10 grid w-full h-full overflow-x-hidden place-items-center">
                     <h2 class="font-bold text-center text-h1"><?= $faculty->title() ?></h2>
                 </div>
@@ -35,6 +36,7 @@
                     </div>
                 </div>
             </article>
+            <?php $i++ ?>
         <?php endforeach ?>
     </section>
 
