@@ -10,7 +10,9 @@
             <?php snippet('components/picture', ['image' => $background, 'styles' => 'absolute inset-0 w-full h-full object-cover opacity-85']) ?>
         <?php endif ?>
         <a class="absolute -translate-x-1/2 bottom-s left-1/2 animate-bounce" href="#content">
-            <?= svg('assets/icons/arrow_down.svg') ?>
+            <div class="-translate-x-1/2 w-2xl">
+                <?= svg('assets/icons/arrow_down.svg') ?>
+            </div>
         </a>
     </div>
 </header>

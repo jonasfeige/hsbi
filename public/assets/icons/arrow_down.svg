@@ -1,3 +1,5 @@
-<svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 21.8L3.47 18.415L14.665 29.735L15.61 30.635L15.555 0H20.445L20.39 30.685L32.53 18.415L36 21.85L17.975 40L0 21.8Z" fill="#F8F5F0"/>
+<svg class="w-full" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M0 21.8L3.47 18.415L14.665 29.735L15.61 30.635L15.555 0H20.445L20.39 30.685L32.53 18.415L36 21.85L17.975 40L0 21.8Z"
+        fill="#F8F5F0" />
 </svg>
