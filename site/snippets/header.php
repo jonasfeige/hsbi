@@ -5,7 +5,8 @@
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="icon" href="data:;base64,=">
   <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/favicons/apple-touch-icon.png?v=3') ?>">

@@ -7,6 +7,7 @@ import faculty from './alpine/data.faculty'
 import faculties from './alpine/data.faculties'
 import numbers from './alpine/data.numbers'
 import location from './alpine/data.location'
+import video from './alpine/data.video'
 import wheel from './alpine/data.wheel'
 
 import DefaultRenderer from './taxi/renderer.default'
@@ -27,6 +28,7 @@ document.addEventListener('alpine:init', () => {
 	Alpine.data('faculties', faculties)
 	Alpine.data('location', location)
 	Alpine.data('numbers', numbers)
+	Alpine.data('video', video)
 	Alpine.data('wheel', wheel)
 })
 
