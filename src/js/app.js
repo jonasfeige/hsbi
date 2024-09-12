@@ -67,3 +67,16 @@ setTimeout(() => {
 }, 300)
 
 export default taxi
+
+/* Disable pinch zoom */
+document.addEventListener('gesturestart', function (e) {
+	e.preventDefault()
+})
+
+document.addEventListener('gesturechange', function (e) {
+	e.preventDefault()
+})
+
+document.addEventListener('gestureend', function (e) {
+	e.preventDefault()
+})
