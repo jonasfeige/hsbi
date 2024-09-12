@@ -8,6 +8,7 @@
 /* 04 - Elements */
 @import '04-elements/elements.html.css';
 @import '04-elements/elements.body.css';
+@import '04-elements/elements.scrollbars.css';
 /* 05 - Objects */
 @import '05-objects/objects.details.css';
 @import '05-objects/objects.search.css';
@@ -23,15 +24,3 @@
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
-
-/* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-	display: none;
-}
-
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-}
