@@ -25,7 +25,7 @@ if (
             <div class="pointer-events-none">
                 <span :class="isPaused ? 'opacity-50' : 'opacity-0'" class="absolute inset-0 w-full h-full bg-black"></span>
                 <span :class="isPaused ? '' : 'opacity-0'" class="absolute inset-0 z-10 grid w-full h-full place-items-center">
-                    <span class="w-3xl"><?= svg('assets/images/icons/play.svg') ?></span>
+                    <span class="w-3xl"><?= svg('assets/icons/play.svg') ?></span>
                 </span>
             </div>
             <?= $video ?>
