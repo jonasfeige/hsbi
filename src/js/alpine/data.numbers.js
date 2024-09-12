@@ -6,7 +6,6 @@ export default () => ({
 		counters.forEach((counter) => {
 			const count = counter.dataset.count
 			const duration = this.calculateDuration(count)
-			console.log(duration)
 			inView(counter, () => {
 				setTimeout(() => {
 					animate(
