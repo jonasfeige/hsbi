@@ -13,8 +13,7 @@ if (
         'loop'     => $block->loop()->toBool(),
         'muted'    => $block->muted()->toBool(),
         'x-ref'    => 'video',
-        'style'    => 'pointer-events: auto;'
-        // 'poster'   => $block->poster()->toFile()?->url(),
+        'poster'   => $block->poster()->toFile()?->resize(1920)->url(),
         // 'preload'  => $block->preload()->value(),
     ]);
 }

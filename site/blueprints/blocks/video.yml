@@ -9,6 +9,15 @@ fields:
     query: model.videos
     multiple: false
     uploads: video
+  poster:
+    label: Poster
+    type: files
+    query: model.images
+    multiple: false
+    image:
+      back: black
+    uploads:
+      template: image
   # autoplay:
   #   label: field.blocks.video.autoplay
   #   type: toggle
